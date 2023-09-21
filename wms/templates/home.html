@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatil=ble" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Maphale Thulo, WMS">
+	<title>WMS App</title>
+	<!-- Links CSS Bootstrap-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<!-- Links CSS Bootstrap-->
+
+	<!-- Links CSS Open Layer-->
+	<link rel="stylesheet" href="{{ url_for('static', filename='ol/ol.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='ol-ext/ol-ext.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='openlayerswitcher/ol-layerSwitcher.css') }}">
+	<!-- Links CSS Bootstrap-->
+
+</head>
+<body>
+	<!-- Header -->
+	<div class="container-fluid mx-auto px-0">
+		<header class="d-flex justify-content-center bg-body-secondary py-1">
+			<ul class="nav">
+				<li class="nav-item"><a href="{{ url_for('home') }}" class="nav-link active" aria-current="page">Home</a></li>
+				<li class="nav-item"><a href="#" class="nav-link ">Contact Us</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">About</a></li>
+			</ul>
+		</header>
+	</div>
+	<!-- Header -->
+
+	<!-- Title-->
+		<div class="container-fluid mx-auto px-0 d-flex justify-content-center py-2 bg-dark text-white"><h4>Atlantis DSS tool for local renewable energies</h4></div>
+	<!-- Title -->
+
+	<div id="map"></div>
+	<!--<div id="popup" class="ol-popup">
+		<a href="#" id="popup-closer" class="ol-popup-closer"></a>
+		<div id="popup-content"></div>
+	</div>-->
+	<div id="info">&nbsp;</div>
+
+	<!-- Links JS Open Layer -->
+	<script src="{{ url_for('static', filename='ol/ol.js') }}"></script>
+	<script src="{{ url_for('static', filename='ol-ext/ol-ext.js') }}"></script>
+	<script src="{{ url_for('static', filename='openlayerswitcher/ol-layerSwitcher.js') }}"></script>
+	<!--<script src="{{ url_for('static', filename='request/reqwest.js') }}"></script>-->
+	<!--<script src="{{ url_for('static', filename='popup/Popup.js') }}"></script>-->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="{{ url_for('static', filename='main.js') }}"></script>
+	<!-- https://github.com/MrRio/jsPDF -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+	<!-- filesaver-js -->
+	<script type="text/javascript" src="https://cdn.rawgit.com/eligrey/FileSaver.js/aa9f4e0e/FileSaver.min.js"></script>
+	<!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
+	<script src="https://unpkg.com/elm-pep"></script>
+	<!-- Links JS Open Layer -->
+	
+	<!-- Links JS Bootstrap-->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+	<!-- Links JS Bootstrap-->
+
+</body>
+</html>
